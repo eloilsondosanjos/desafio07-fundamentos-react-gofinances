@@ -25,8 +25,6 @@ const Import: React.FC = () => {
   async function handleUpload(): Promise<void> {
     // const data = new FormData();
 
-    // TODO
-
     try {
       // await api.post('/transactions/import', data);
     } catch (err) {
