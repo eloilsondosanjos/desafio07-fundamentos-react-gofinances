@@ -49,10 +49,12 @@ const Dashboard: React.FC = () => {
         }),
       );
 
+      const balanceNoFormatted = response.data.balance;
+
       const balanceFormatted = {
-        income: formatValue(response.data.balance.income),
-        outcome: formatValue(response.data.balance.outcome),
-        total: formatValue(response.data.balance.total),
+        income: formatValue(balanceNoFormatted.income),
+        outcome: formatValue(balanceNoFormatted.outcome),
+        total: formatValue(balanceNoFormatted.total),
       };
 
       setTransactions(transactionsFormatted);
@@ -100,7 +102,6 @@ const Dashboard: React.FC = () => {
                 <th>Data</th>
               </tr>
             </thead>
-
             <tbody>
               {transactions.map(transaction => (
                 <tr key={transaction.id}>
