@@ -65,7 +65,7 @@ Foi desenvolvida usando as seguintes tecnologias:
 
 ```bash
 
-  # Para clonar o repositório para sua maquina
+  # Para clonar o repositório para seu computador
 
   $ git clone https://github.com/eloilsonrocha/Desafio06DatabaseUpload.git
 
